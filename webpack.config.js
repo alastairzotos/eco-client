@@ -12,12 +12,12 @@ const mode = process.env.MODE;
 const isDev = mode === 'development';
 
 const plugins = [
-    new HtmlWebpackPlugin({
-        chunks: ["index"],
-        filename: '../../server/public/index.html',
-        template: '../server/templates/index.template.html',
-        favicon: './favicon.ico'
-    }),
+    // new HtmlWebpackPlugin({
+    //     chunks: ["index"],
+    //     filename: '../../server/public/index.html',
+    //     template: '../server/templates/index.template.html',
+    //     favicon: './favicon.ico'
+    // }),
 ];
 
 const srcDir = path.resolve(__dirname, 'src');
@@ -49,9 +49,9 @@ module.exports = {
                     {
                         loader: 'ts-loader',
                         options: {
-                            transpileOnly: true,
-                            experimentalWatchApi: true,
-                        },
+                            //transpileOnly: true,
+                            //experimentalWatchApi: true,
+                        }
                     }
                 ],
             },
@@ -80,9 +80,9 @@ module.exports = {
     plugins,
 
     output: {
-        filename: isDev ? '[name].js' : '[name].[chunkhash].js',
+        filename: '[name].js',
         pathinfo: false,
-        path: path.resolve(__dirname, '..', 'server', 'public'),
-        publicPath: '/'
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: path.resolve(__dirname, 'dist')
     },
 };

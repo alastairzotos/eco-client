@@ -2,3 +2,5 @@ favicon.ico
 webpack.config.js
 tsconfig.json
 tslint.json
+src
+node_modules
