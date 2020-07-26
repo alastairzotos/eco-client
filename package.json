@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alastairzotos/stockpoint.git"
+    "url": "git+https://github.com/alastairzotos/eco-client.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alastairzotos/stockpoint/issues"
+    "url": "https://github.com/alastairzotos/eco-client/issues"
   },
-  "homepage": "https://github.com/alastairzotos/stockpoint#readme",
+  "homepage": "https://github.com/alastairzotos/eco-client#readme",
   "husky": {
     "hooks": {
       "pre-commit": "npm run pre-commit"
