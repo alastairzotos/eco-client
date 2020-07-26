@@ -69,13 +69,13 @@ module.exports = {
         splitChunks: false
     },
 
-    resolve: {
-        extensions: ['.tsx', '.ts', '.js', '.css'],
-        alias: {
-            '~': srcDir,
-            ...parseModulesToAlias(`${srcDir}/modules`),
-        }
-    },
+    // resolve: {
+    //     extensions: ['.tsx', '.ts', '.js', '.css'],
+    //     alias: {
+    //         '~': srcDir,
+    //         ...parseModulesToAlias(`${srcDir}/modules`),
+    //     }
+    // },
 
     plugins,
 

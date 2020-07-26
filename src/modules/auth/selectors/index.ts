@@ -1,7 +1,6 @@
 import { createSelector } from 'reselect';
-import { IState } from '~/modules/state';
 
-import { IRegisterResponseType } from '../models';
+import { IState } from '../../../modules/state';
 
 const getState = (state: IState) => state.auth;
 

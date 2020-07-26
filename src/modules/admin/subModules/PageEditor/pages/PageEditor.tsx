@@ -1,9 +1,9 @@
 import PagesIcon from '@material-ui/icons/InsertDriveFile';
 import * as React from 'react';
-import { Panel } from '~/atomic/atoms/Panel';
-import SplitPanel from '~/atomic/atoms/SplitPanel';
-import { IAdminApp } from '~/core';
 
+import { Panel } from '../../../../../atomic/atoms/Panel';
+import SplitPanel from '../../../../../atomic/atoms/SplitPanel';
+import { IAdminApp } from '../../../../../core';
 import { PageContentEditor } from '../components/PageContentEditor';
 import { PagesSidePanel } from '../components/PagesSidepanel';
 

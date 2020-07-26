@@ -9,9 +9,9 @@ import SortableTree, {
     TreeItem
 } from 'react-sortable-tree';
 import TreeTheme from 'react-sortable-tree-theme-minimal';
-import { Spacer } from '~/atomic/atoms/Spacer';
-import { pagesToTree } from '~/core';
 
+import { Spacer } from '../../../../../atomic/atoms/Spacer';
+import { pagesToTree } from '../../../../../core';
 import { beginSavePage } from '../../PageEditor/actions';
 import { getPages } from '../../PageEditor/selectors';
 

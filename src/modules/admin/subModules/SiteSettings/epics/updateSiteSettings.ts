@@ -2,8 +2,8 @@ import { ISiteSettings } from '@ecocms/common';
 import { Epic } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
-import { fetch$, IAction } from '~/core';
 
+import { fetch$, IAction } from '../../../../../core';
 import { IAdminSiteSettingsActions, setSettingsUpdated, setUpdateSettingsError } from '../actions';
 
 export const updateSiteSettingsEpic: Epic = action$ =>

@@ -19,9 +19,6 @@
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"declaration": true,
-		"skipLibCheck": true,
-		"paths": {
-			"~/*": ["*"]
-		}
+		"skipLibCheck": true
 	},
 }

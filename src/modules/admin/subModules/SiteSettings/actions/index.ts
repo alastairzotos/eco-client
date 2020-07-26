@@ -1,5 +1,6 @@
 import { ISiteSettings } from '@ecocms/common';
-import { createAction } from '~/core';
+
+import { createAction } from '../../../../../core';
 
 export enum IAdminSiteSettingsActions {
     BeginLoadSettings = 'admin/sitesettings/BEGIN_GET_SETTINGS',

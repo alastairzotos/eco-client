@@ -1,4 +1,4 @@
-import { IModule } from '~/core';
+import { IModule } from 'core';
 
 export const coreModule: IModule = {
     name: 'core',

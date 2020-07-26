@@ -2,8 +2,8 @@ import { IAuthResponse, IUser } from '@ecocms/common';
 import { Epic } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, mergeMap } from 'rxjs/operators';
-import { fetch$, IAction, IResponse } from '~/core';
 
+import { fetch$, IAction, IResponse } from '../../../core';
 import {
     IAuthActionTypes,
     setRegisterUserError,

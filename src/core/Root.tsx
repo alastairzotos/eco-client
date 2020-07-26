@@ -6,7 +6,8 @@ import { Route, RouteComponentProps, Router, Switch, withRouter } from 'react-ro
 import { Store } from 'redux';
 import { Persistor } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
-import { IPages } from '~/core/pages';
+
+import { IPages } from '../core/pages';
 
 interface IRootProps {
     store: Store;

@@ -1,10 +1,10 @@
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import AdminLayout from '~/atomic/organisms/AdminLayout';
-import { moduleManager } from '~/core';
-import mainTheme from '~/modules/theme';
 
+import AdminLayout from '../../../../../../atomic/organisms/AdminLayout';
+import { moduleManager } from '../../../../../../core';
+import mainTheme from '../../../../../../modules/theme';
 import { toggleTheme } from '../../actions';
 import { getTheme } from '../../selectors';
 

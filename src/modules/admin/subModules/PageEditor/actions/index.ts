@@ -1,5 +1,6 @@
 import { IPage } from '@ecocms/common';
-import { createAction } from '~/core';
+
+import { createAction } from '../../../../../core';
 
 export enum IAdminPageEditorActionType {
     BeginAddPage = 'admin/pageeditor/BEGIN_ADD_PAGE',

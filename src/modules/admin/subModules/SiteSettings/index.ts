@@ -1,4 +1,4 @@
-import { IModule } from '~/core';
+import { IModule } from '../../../../core';
 
 import { beginLoadSettings } from './actions';
 import { siteSettingsAdminApp } from './apps/SiteSettingsEditor';

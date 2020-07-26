@@ -1,4 +1,4 @@
-import { createAction } from '~/core';
+import { createAction } from '../../../../../core';
 
 export enum IAdminCoreActionType {
     ToggleTheme = 'admin/core/TOGGLE_THEME'

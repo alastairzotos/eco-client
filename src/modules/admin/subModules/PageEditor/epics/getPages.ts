@@ -2,9 +2,8 @@ import { IPage } from '@ecocms/common';
 import { Epic } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
-import { fetch$ } from '~/core';
-import { IResponse } from '~/core/fetch';
 
+import { fetch$, IResponse } from '../../../../../core';
 import {
     IAdminPageEditorActionType,
     setGetPagesError,

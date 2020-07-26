@@ -1,5 +1,6 @@
 import { IUser, IUserLoginPayload } from '@ecocms/common';
-import { createAction } from '~/core';
+
+import { createAction } from '../../../core';
 
 export enum IAuthActionTypes {
     RegisterUser = 'auth/REGISTER_USER',

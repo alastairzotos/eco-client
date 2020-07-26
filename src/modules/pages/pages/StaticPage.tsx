@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RouteComponentProps } from 'react-router-dom';
-import { pagesToTree } from '~/core';
-import { defaultTheme, IPageNavigation, IThemeRenderProps } from '~/core/theme';
-import { getPages } from '~/modules/admin/subModules/PageEditor/selectors';
-import { getSelectedTheme } from '~/modules/admin/subModules/SiteSettings';
 
+import { defaultTheme, IPageNavigation, IThemeRenderProps, pagesToTree } from '../../../core';
+import { getPages } from '../../../modules/admin/subModules/PageEditor/selectors';
+import { getSelectedTheme } from '../../../modules/admin/subModules/SiteSettings';
 import { beginGetPage } from '../actions';
 import { getPage, getPageError, getPageFetchStatus } from '../selectors';
 

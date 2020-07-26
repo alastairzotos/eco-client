@@ -1,8 +1,9 @@
 import { List, ListItem } from '@material-ui/core';
 import * as React from 'react';
-import { Panel } from '~/atomic/atoms/Panel';
-import SplitPanel from '~/atomic/atoms/SplitPanel';
-import { ISplitPanelProps } from '~/atomic/atoms/SplitPanel/SplitPanel';
+
+import { Panel } from '../../atoms/Panel';
+import SplitPanel from '../../atoms/SplitPanel';
+import { ISplitPanelProps } from '../../atoms/SplitPanel/SplitPanel';
 
 interface IApp {
     id: string;

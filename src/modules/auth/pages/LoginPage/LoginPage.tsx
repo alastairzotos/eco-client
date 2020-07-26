@@ -2,8 +2,8 @@ import { Fab, FormControl, Grid, LinearProgress, makeStyles, Paper, TextField, T
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { getForwardURL } from '~/core';
 
+import { getForwardURL } from '../../../../core';
 import { loginUser } from '../../actions';
 import { getLoginError, isLoggedIn, isLoggingIn } from '../../selectors';
 

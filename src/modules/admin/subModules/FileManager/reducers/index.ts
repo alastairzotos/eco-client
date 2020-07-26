@@ -1,7 +1,7 @@
 import { IFile, IFilesAndFolders } from '@ecocms/common';
 import { createReducer, PayloadAction } from '@reduxjs/toolkit';
-import { ICallStatus } from '~/core';
 
+import { ICallStatus } from '../../../../../core';
 import { IAdminFilesActionTypes } from '../actions';
 import { IFilesViewStyle } from '../models';
 

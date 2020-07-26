@@ -1,4 +1,4 @@
-import { IModule } from '~/core';
+import { IModule } from '../../../../core';
 
 import { dashboardApp } from './pages/Dashboard';
 

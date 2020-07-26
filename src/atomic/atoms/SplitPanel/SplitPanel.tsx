@@ -1,7 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles';
 import * as React from 'react';
 import SplitPane from 'react-split-pane';
-import { getDefaultSplitPanelSize, getMinSplitPanelSize, ISplitDirection, setSplitPanelSize } from '~/core/utils';
+
+import {
+    getDefaultSplitPanelSize,
+    getMinSplitPanelSize,
+    ISplitDirection,
+    setSplitPanelSize
+} from '../../../core/utils';
 
 import './styles/resizer.css';
 

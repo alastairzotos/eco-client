@@ -3,9 +3,8 @@ import cookies from 'cookiesjs';
 import { Epic } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
-import { fetch$, IAction } from '~/core';
-import { IResponse } from '~/core/fetch';
 
+import { fetch$, IAction, IResponse } from '../../../core';
 import {
     IAuthActionTypes,
     setLoginError,

@@ -1,6 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { IAdminTheme } from '~/atomic/organisms/AdminLayout';
 
+import { IAdminTheme } from '../../../../../atomic/organisms/AdminLayout';
 import { IAdminCoreActionType } from '../actions';
 
 export interface IAdminCoreState {

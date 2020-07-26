@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
-import { moduleManager } from '~/core';
-import { IState } from '~/modules/state';
+
+import { moduleManager } from '../../../../../core';
+import { IState } from '../../../../../modules/state';
 
 const getState = (state: IState) => state.admin.siteSettings;
 

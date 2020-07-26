@@ -2,8 +2,8 @@ import { AppBar, IconButton, InputAdornment, makeStyles, TextField, Toolbar, Typ
 import CloseIcon from '@material-ui/icons/Close';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { config } from '~/core';
 
+import { config } from '../../../../../core';
 import { beginUpdateFile, previewFile } from '../actions';
 import { getFileUpdateStatus, getPreviewFile } from '../selectors';
 import { getBaseName, getFilePath, validateFilename } from '../utils';

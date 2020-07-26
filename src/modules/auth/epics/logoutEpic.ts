@@ -1,8 +1,8 @@
 import { Epic } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, delay, switchMap } from 'rxjs/operators';
-import { fetch$ } from '~/core';
 
+import { fetch$ } from '../../../core';
 import {
     IAuthActionTypes,
     setUserLoggedOut,

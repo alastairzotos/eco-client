@@ -21,7 +21,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import clsx from 'clsx';
 import * as React from 'react';
 import { Link, Route, Switch, useLocation } from 'react-router-dom';
-import { IAdminApp } from '~/core';
+
+import { IAdminApp } from '../../../core';
 
 import { useStyles } from './styles';
 
