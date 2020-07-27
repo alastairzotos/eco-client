@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
+import { IState } from '~/modules/state';
 
-import { IState } from '../../../../../modules/state';
 import { IAdminFilesState } from '../reducers';
 
 const getState = (state: IState): IAdminFilesState => state.admin.files;

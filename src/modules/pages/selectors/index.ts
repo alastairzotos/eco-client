@@ -1,6 +1,5 @@
 import { createSelector } from 'reselect';
-
-import { IState } from '../../../modules/state';
+import { IState } from '~/modules/state';
 
 const getState = (state: IState) => state.pages;
 

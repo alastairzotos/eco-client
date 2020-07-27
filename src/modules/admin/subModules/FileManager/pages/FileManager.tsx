@@ -1,7 +1,7 @@
 import Icon from '@material-ui/icons/CloudUpload';
 import * as React from 'react';
+import { IAdminApp } from '~/core';
 
-import { IAdminApp } from '../../../../../core';
 import { Dropzone } from '../components/Dropzone';
 import { FilesBrowser } from '../components/FilesBrowser';
 

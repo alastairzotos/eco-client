@@ -1,6 +1,6 @@
 import { IFile, IFilesAndFolders } from '@ecocms/common';
+import { createAction } from '~/core';
 
-import { createAction } from '../../../../../core';
 import { IFilesViewStyle } from '../models';
 
 export enum IAdminFilesActionTypes {

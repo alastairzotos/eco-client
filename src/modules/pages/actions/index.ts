@@ -1,6 +1,5 @@
 import { IPage } from '@ecocms/common';
-
-import { createAction } from '../../../core';
+import { createAction } from '~/core';
 
 export enum IPagesActions {
     BeginGetPage = 'pages/BEGIN_GET_PAGE',

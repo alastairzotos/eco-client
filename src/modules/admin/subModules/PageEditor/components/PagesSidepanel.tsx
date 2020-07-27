@@ -1,8 +1,8 @@
 import { CircularProgress, Divider, Fab, LinearProgress, makeStyles } from '@material-ui/core';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Panel } from '~/atomic/atoms/Panel';
 
-import { Panel } from '../../../../../atomic/atoms/Panel';
 import { beginAddPage, beginGetPages } from '../actions';
 import { getAddPageStatus, getGetPagesStatus, getPages } from '../selectors';
 

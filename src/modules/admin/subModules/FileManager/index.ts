@@ -1,4 +1,4 @@
-import { IModule } from '../../../../core';
+import { IModule } from '~/core';
 
 import { filesEpic } from './epics';
 import { fileManagerApp } from './pages/FileManager';

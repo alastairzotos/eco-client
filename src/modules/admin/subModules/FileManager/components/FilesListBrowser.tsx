@@ -14,8 +14,8 @@ import FileIcon from '@material-ui/icons/InsertDriveFile';
 import dayjs from 'dayjs';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Spacer } from '~/atomic/atoms/Spacer';
 
-import { Spacer } from '../../../../../atomic/atoms/Spacer';
 import { previewFile, setCurrentPath } from '../actions';
 import { getCurrentPath, getFilesAndFolders, getPreviewFile } from '../selectors';
 import { formatFileSize, getBaseName } from '../utils';

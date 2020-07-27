@@ -2,9 +2,9 @@ import { IconButton, makeStyles, Paper } from '@material-ui/core';
 import Delete from '@material-ui/icons/Delete';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Spacer } from '~/atomic/atoms/Spacer';
+import { Confirm } from '~/atomic/molecules/Confirm';
 
-import { Spacer } from '../../../../../../atomic/atoms/Spacer';
-import { Confirm } from '../../../../../../atomic/molecules/Confirm';
 import { beginDeletePage } from '../../actions';
 import { getSelectedPage } from '../../selectors';
 

@@ -2,8 +2,8 @@ import { IFilesAndFolders } from '@ecocms/common';
 import { Epic } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
+import { fetch$, IAction, IResponse } from '~/core';
 
-import { fetch$, IAction, IResponse } from '../../../../../core';
 import { IAdminFilesActionTypes, setFilesAndFolders, setGetFilesAndFoldersError } from '../actions';
 
 export const getFilesAndFoldersEpic: Epic = action$ =>

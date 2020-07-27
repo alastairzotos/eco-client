@@ -11,8 +11,8 @@ import {
 } from '@material-ui/core';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { moduleManager } from '~/core';
 
-import { moduleManager } from '../../../../../core';
 import { beginUpdateSettings } from '../actions';
 import { getSiteSettings, getSiteSettingsLoadStatus, getSiteSettingsUpdateStatus } from '../selectors';
 

@@ -1,4 +1,5 @@
-import { IModule, moduleManager, startApp } from '../core';
+import { IModule, moduleManager, startApp } from '~/core';
+
 import {
     adminModule,
     authModule,

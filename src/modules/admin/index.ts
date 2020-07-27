@@ -1,4 +1,4 @@
-import { combineModules, IModule } from '../../core';
+import { combineModules, IModule } from '~/core';
 
 import { adminCore, IAdminCoreState } from './subModules/AdminCore';
 import { dashboardModule } from './subModules/Dashboard';

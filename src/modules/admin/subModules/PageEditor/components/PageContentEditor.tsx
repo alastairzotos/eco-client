@@ -1,10 +1,10 @@
 import { Container, TextField } from '@material-ui/core';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Panel } from '~/atomic/atoms/Panel';
+import { Spacer } from '~/atomic/atoms/Spacer';
+import SplitPanel from '~/atomic/atoms/SplitPanel';
 
-import { Panel } from '../../../../../atomic/atoms/Panel';
-import { Spacer } from '../../../../../atomic/atoms/Spacer';
-import SplitPanel from '../../../../../atomic/atoms/SplitPanel';
 import { setPageData } from '../actions';
 import { getSelectedPage } from '../selectors';
 

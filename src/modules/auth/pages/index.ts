@@ -1,4 +1,4 @@
-import { IPages } from '../../../core';
+import { IPages } from '~/core';
 
 import LoginPage from './LoginPage/LoginPage';
 import RegisterPage from './RegisterPage/RegisterPage';

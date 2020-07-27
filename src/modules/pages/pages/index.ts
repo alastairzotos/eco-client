@@ -1,4 +1,4 @@
-import { IPages } from '../../../core';
+import { IPages } from '~/core';
 
 import StaticPage from './StaticPage';
 

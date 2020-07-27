@@ -1,4 +1,4 @@
-import { IModule } from '../../../../core';
+import { IModule } from '~/core';
 
 import pages from './pages';
 import { coreReducer } from './reducers';

@@ -1,7 +1,7 @@
 import { IPage } from '@ecocms/common';
 import { createReducer, PayloadAction } from '@reduxjs/toolkit';
+import { ICallStatus } from '~/core';
 
-import { ICallStatus } from '../../../core';
 import { IPagesActions } from '../actions';
 
 export interface IPagesState {

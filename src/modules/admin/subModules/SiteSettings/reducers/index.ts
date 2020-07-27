@@ -1,7 +1,7 @@
 import { ISiteSettings } from '@ecocms/common';
 import { createReducer, PayloadAction } from '@reduxjs/toolkit';
+import { ICallStatus } from '~/core';
 
-import { ICallStatus } from '../../../../../core';
 import { IAdminSiteSettingsActions } from '../actions';
 
 export interface IAdminSiteSettingsState {

@@ -3,8 +3,8 @@ import BackIcon from '@material-ui/icons/ArrowBackIos';
 import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Spacer } from '~/atomic/atoms/Spacer';
 
-import { Spacer } from '../../../../../atomic/atoms/Spacer';
 import { beginGetFilesAndFolders, setCurrentPath, setFilesViewStyle } from '../actions';
 import {
     getCurrentPath,

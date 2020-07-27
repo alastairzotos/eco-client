@@ -2,8 +2,8 @@ import { IPage } from '@ecocms/common';
 import { Epic } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
+import { fetch$, IAction, IResponse } from '~/core';
 
-import { fetch$, IAction, IResponse } from '../../../core';
 import { IPagesActions, setGetPageError, setPage } from '../actions';
 
 export const getPageEpic: Epic = action$ =>

@@ -2,9 +2,9 @@ import { Observable } from 'redux';
 import { Epic, StateObservable } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
+import { fetch$, IAction } from '~/core';
+import { IState } from '~/modules/state';
 
-import { fetch$, IAction } from '../../../../../core';
-import { IState } from '../../../../../modules/state';
 import { IAdminFilesActionTypes, setFilesUploaded, setFilesUploadError } from '../actions';
 import { getCurrentPath } from '../selectors';
 

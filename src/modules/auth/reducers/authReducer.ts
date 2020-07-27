@@ -1,7 +1,7 @@
 import { IUser } from '@ecocms/common';
 import { createReducer, PayloadAction } from '@reduxjs/toolkit';
+import { ICallStatus } from '~/core/fetch';
 
-import { ICallStatus } from '../../../core/fetch';
 import { IAuthActionTypes, ILoginErrorPayload } from '../actions';
 
 export interface IAuthState {
