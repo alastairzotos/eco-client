@@ -1,7 +1,6 @@
+import loadable from '@loadable/component';
 import { IPages } from '~/core';
 
-import AdminPage from './AdminPage/AdminPage';
-
 export default {
-    '/admin/:tab': AdminPage
+    '/admin/:tab': loadable(async () => import('./AdminPage'))
 } as IPages;

@@ -1,7 +1,6 @@
+import loadable from '@loadable/component';
 import { IPages } from '~/core';
 
-import StaticPage from './StaticPage';
-
 export default {
-    '*': StaticPage
+    '*': loadable(async () => import('./StaticPage'))
 } as IPages;

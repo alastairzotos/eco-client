@@ -1,9 +1,7 @@
+import loadable from '@loadable/component';
 import { IPages } from '~/core';
 
-import LoginPage from './LoginPage/LoginPage';
-import RegisterPage from './RegisterPage/RegisterPage';
-
 export default {
-    '/login': LoginPage,
-    '/register': RegisterPage
+    '/login': loadable(async () => import('./LoginPage')),
+    '/register': loadable(async () => import('./RegisterPage'))
 } as IPages;
