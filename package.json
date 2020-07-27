@@ -2,14 +2,14 @@
   "name": "@ecocms/client",
   "version": "0.0.13",
   "description": "",
-  "main": "build/main.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint -c tslint.json './**/*.ts{x,}'",
     "lint-fix": "tslint -c tslint.json './**/*.ts{x,}' --fix",
     "pre-commit": "npm run lint",
-    "start:dev": "webpack-dev-server --port 5998 --targetType dev-server",
-    "build": "tsc"
+    "build": "tsc --emitDeclarationOnly && webpack",
+    "build-watch": "tsc --emitDeclarationOnly && webpack -w"
   },
   "repository": {
     "type": "git",

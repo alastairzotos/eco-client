@@ -1,24 +1,6 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const findup = require('findup-sync');
-const dotenv = require('dotenv');
 const { readdirSync, statSync } = require('fs');
-
-dotenv.config({ path: findup('.env', { cwd: __dirname })});
-
-const mode = process.env.MODE;
-
-const isDev = mode === 'development';
-
-const plugins = [
-    // new HtmlWebpackPlugin({
-    //     chunks: ["index"],
-    //     filename: '../../server/public/index.html',
-    //     template: '../server/templates/index.template.html',
-    //     favicon: './favicon.ico'
-    // }),
-];
 
 const srcDir = path.resolve(__dirname, 'src');
 
@@ -31,7 +13,7 @@ const parseModulesToAlias = (p) =>
     }), {});
 
 module.exports = {
-    mode,
+    mode: 'development',
 
     entry: {
         index: path.resolve(__dirname, 'src/index.ts'),
@@ -49,8 +31,8 @@ module.exports = {
                     {
                         loader: 'ts-loader',
                         options: {
-                            //transpileOnly: true,
-                            //experimentalWatchApi: true,
+                            transpileOnly: true,
+                            experimentalWatchApi: true,
                         }
                     }
                 ],
@@ -69,20 +51,21 @@ module.exports = {
         splitChunks: false
     },
 
-    // resolve: {
-    //     extensions: ['.tsx', '.ts', '.js', '.css'],
-    //     alias: {
-    //         '~': srcDir,
-    //         ...parseModulesToAlias(`${srcDir}/modules`),
-    //     }
-    // },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js', '.css'],
+        alias: {
+            '~': srcDir,
+            ...parseModulesToAlias(`${srcDir}/modules`),
+        }
+    },
 
-    plugins,
+    // plugins,
 
     output: {
         filename: '[name].js',
         pathinfo: false,
         path: path.resolve(__dirname, 'dist'),
-        publicPath: path.resolve(__dirname, 'dist')
+        library: '@ecocms/client',
+        libraryTarget: 'umd'
     },
 };
