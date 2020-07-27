@@ -3,9 +3,12 @@ import * as React from 'react';
 
 import { IPages } from '../../../core';
 
+import LoginPage from './LoginPage/LoginPage';
+import RegisterPage from './RegisterPage/RegisterPage';
+
 export default {
     // '/login': loadable(async () => import('./LoginPage')),
     // '/register': loadable(async () => import('./RegisterPage'))
-    '/login': React.lazy(async () => import('./LoginPage/LoginPage')),
-    '/register': React.lazy(async () => import('./RegisterPage/RegisterPage'))
+    '/login': LoginPage,
+    '/register': RegisterPage
 } as IPages;
