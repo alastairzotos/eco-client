@@ -59,8 +59,6 @@ module.exports = {
         }
     },
 
-    // plugins,
-
     output: {
         filename: '[name].js',
         pathinfo: false,
