@@ -7,12 +7,10 @@
 	],
 	"compilerOptions": {
 		"moduleResolution": "node",
-		"module": "CommonJS",
 		"target": "es5",
 		"sourceMap": true,
 		"jsx": "react",
 		"rootDir": "src",
-		"lib": ["ES2015", "DOM"],
 		"outDir": "dist",
 		"baseUrl": "src",
 		"resolveJsonModule": true,
