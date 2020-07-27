@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectCurrentPage, setPages } from '../actions';
 import { getPages, getSelectedPageId } from '../selectors';
 
-import './pages.css';
+// import './pages.css';
 
 const useStyles = makeStyles(theme => ({
     pageItem: {
