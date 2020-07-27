@@ -8,7 +8,7 @@ import {
     setSplitPanelSize
 } from '~/core/utils';
 
-// import './styles/resizer.css';
+import './styles/resizer.css';
 
 export interface ISplitPanelProps {
     id: string;
